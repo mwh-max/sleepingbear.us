@@ -23,3 +23,9 @@ window.addEventListener("scroll", function () {
   const nav = document.querySelector("nav");
   if (nav) nav.classList.toggle("scrolled", window.scrollY > 0);
 });
+
+document.querySelectorAll(".sbl-email-link").forEach((link) => {
+  const user = link.getAttribute("data-user");
+  const domain = link.getAttribute("data-domain");
+  link.href = `mailto:${user}@${domain}`;
+});

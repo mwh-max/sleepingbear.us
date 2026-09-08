@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Percept",
+        "alternateName": "Percept Accessibility Feedback Tool",
+        "url": "https://sleepingbear.us/projects/percept.html",
+        "applicationCategory": "AccessibilityTool",
+        "applicationSubCategory": "Web Accessibility Analyzer",
+        "operatingSystem": "All",
+        "browserRequirements": "Requires JavaScript-enabled browser",
+        "description": "Percept is a profile-aware accessibility feedback tool that interprets HTML layouts through the lens of real-world user experiences—such as ADHD, dyslexia, low vision, and screenreader use. It offers both emotional tone and technical insights based on selected user profiles.",
+        "featureList": [
+          "Profile-based analysis: ADHD, Dyslexia, Low Vision, Screen Reader, Motor Disabilities",
+          "Real-time feedback based on HTML markup",
+          "Toggle between emotional tone and technical feedback",
+          "Tone preview for each user profile",
+          "Clipboard copy for feedback output"
+        ],
+        "creator": {
+          "@type": "Person",
+          "name": "Matthew Herron",
+          "url": "https://sleepingbear.us"
+        },
+        "license": "https://www.mozilla.org/en-US/MPL/2.0/",
+        "softwareVersion": "1.0",
+        "inLanguage": "en",
+        "keywords": [
+          "accessibility",
+          "empathy",
+          "inclusive design",
+          "HTML analysis",
+          "UX feedback",
+          "web accessibility",
+          "emotional tone",
+          "assistive technology"
+        ],
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0.00", "priceCurrency": "USD" }
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percept – Sleeping Bear Labs</title>
+    <link rel="canonical" href="https://sleepingbear.us/projects/percept.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sleepingbear.us/projects/percept.html" />
+    <meta property="og:title" content="Percept – Sleeping Bear Labs" />
+    <meta property="og:description" content="Percept is a profile-aware accessibility feedback tool that previews tone and usability across ADHD, dyslexia, low vision, and screen reader profiles." />
+    <meta property="og:image" content="https://sleepingbear.us/images/logo-sleepingbearlabs.png" />
+    <meta property="og:image:alt" content="Sleeping Bear Labs logo" />
+    <meta
+      name="description"
+      content="Percept is a profile-aware accessibility feedback tool that previews tone and usability across ADHD, dyslexia, low vision, and screen reader profiles."
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <div class="logo">
+            <a href="../index.html">
+              <img
+                src="../images/logo-sleepingbearlabs.png"
+                alt="Sleeping Bear Labs"
+                height="32"
+              />
+            </a>
+          </div>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="navLinks"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="../projects.html" class="active">Projects</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../writing.html">Writing</a></li>
+            <li><a href="../work-with-me.html">Work With Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-content">
+      <main>
+
+        <section class="sbl-page-hero">
+          <h1>Percept</h1>
+          <p>Percept helps people with disabilities and neurodivergent users get clearer answers from AI. It reviews your prompt, flags spots that may confuse the model, and suggests small edits to improve clarity and tone. You can choose a profile like ADHD, screenreader, low vision, dyslexia or motor disability to see guidance that fits real use. The aim is simple: make the tech work for you, not against you. Built with plain HTML, CSS and JavaScript, Percept runs in the browser with no extras.</p>
+        </section>
+
+        <section class="sbl-prose">
+          <hr />
+
+          <h2>About This Project</h2>
+          <p>
+            Percept lets you test the tone of a written input (like a UX message
+            or help text) against various reader profiles. It's designed to help
+            developers and content designers better understand how language
+            lands across different use cases — from ADHD profiles to executive
+            stakeholders.
+          </p>
+          <p>
+            The goal: create more inclusive, intentional communication —
+            especially for AI-generated or templated content where tone drift
+            can occur.
+          </p>
+
+          <h2>How It Was Built</h2>
+          <p>
+            Built with vanilla HTML, CSS and JavaScript, Percept uses
+            localStorage to remember session state. It features profile
+            selectors, toggleable tone preview, and session recovery. Data is
+            pulled from static JSON files, which represent different tone
+            perspectives.
+          </p>
+
+          <h2>FAQ</h2>
+          <p>
+            <strong>Q:</strong> Is this an AI tool?<br />
+            <strong>A:</strong> No. It's a static frontend app meant to help
+            humans preview tone using pre-written feedback profiles.
+          </p>
+          <p>
+            <strong>Q:</strong> Can I add my own tone or persona?<br />
+            <strong>A:</strong> Not yet, but the JSON structure makes it easy to
+            extend.
+          </p>
+
+          <div class="sbl-project-links">
+            <a href="https://mwh-max.github.io/percept" target="_blank" rel="noopener noreferrer">Live Demo →</a>
+            <a href="https://github.com/mwh-max/percept" target="_blank" rel="noopener noreferrer">View Code on GitHub →</a>
+          </div>
+
+          <div class="sbl-cta-block">
+            <p><a href="../projects.html">← All projects</a></p>
+          </div>
+        </section>
+
+      </main>
+    </div>
+
+    <footer class="sbl-footer">
+      <div class="sbl-footer-inner">
+        <span class="sbl-footer-copy">&copy; 2026 Sleeping Bear Labs</span>
+        <nav class="sbl-footer-nav">
+          <a href="../index.html">Home</a>
+          <a href="../projects.html">Projects</a>
+          <a href="../about.html">About</a>
+          <a href="../writing.html">Writing</a>
+          <a href="../work-with-me.html">Work With Me</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="../main.js" defer></script>
+  </body>
+</html>

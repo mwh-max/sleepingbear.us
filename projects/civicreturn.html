@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Civic Return",
+        "description": "Civic Return calculates open-access public green space per resident across Kentucky counties using federal land and population data. It makes land equity visible for residents, journalists, and local planners.",
+        "url": "https://sleepingbear.us/projects/civicreturn.html",
+        "applicationCategory": "CivicApplication",
+        "operatingSystem": "All",
+        "creator": {
+          "@type": "Person",
+          "name": "Matthew Herron"
+        },
+        "inLanguage": "en",
+        "keywords": [
+          "green space",
+          "urban equity",
+          "Kentucky",
+          "civic tech",
+          "public land",
+          "county data",
+          "open data visualization"
+        ]
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Civic Return – Sleeping Bear Labs</title>
+    <link rel="canonical" href="https://sleepingbear.us/projects/civicreturn.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sleepingbear.us/projects/civicreturn.html" />
+    <meta property="og:title" content="Civic Return – Sleeping Bear Labs" />
+    <meta property="og:description" content="Civic Return uses federal land and census data to calculate open-access green space per resident across all Kentucky counties. Search your county and see how it compares." />
+    <meta property="og:image" content="https://sleepingbear.us/images/logo-sleepingbearlabs.png" />
+    <meta property="og:image:alt" content="Sleeping Bear Labs logo" />
+    <meta
+      name="description"
+      content="Civic Return uses federal land and census data to calculate open-access green space per resident across all Kentucky counties. Search your county and see how it compares."
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <div class="logo">
+            <a href="../index.html">
+              <img
+                src="../images/logo-sleepingbearlabs.png"
+                alt="Sleeping Bear Labs"
+                height="32"
+              />
+            </a>
+          </div>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="navLinks"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="../projects.html" class="active">Projects</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../writing.html">Writing</a></li>
+            <li><a href="../work-with-me.html">Work With Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-content">
+      <main>
+
+        <section class="sbl-page-hero">
+          <h1>Civic Return</h1>
+          <p>A county-level map showing how much open-access public land each Kentucky resident has — in square feet, from federal data.</p>
+        </section>
+
+        <section class="sbl-prose">
+          <hr />
+
+          <h2>About This Project</h2>
+          <p>
+            Civic Return measures accessible green space per resident across all
+            Kentucky counties. Search for a county and the tool returns a square
+            footage figure based on parks, forests, wildlife areas, and
+            recreation grounds that are open to the public. The goal: make land
+            equity visible without burying it in a report.
+          </p>
+          <p>
+            It's built for residents, journalists, and local planners who want a
+            fast, honest look at how public land is distributed — and where the
+            gaps are.
+          </p>
+
+          <h2>Why I Built This</h2>
+          <p>
+            Public green space is unevenly distributed, and that disparity is
+            rarely visible at the county level. I built Civic Return to surface
+            it using authoritative federal sources — not estimates or
+            approximations. The data is there; it just needed a usable front end.
+          </p>
+
+          <h2>How It Was Built</h2>
+          <p>
+            Built with vanilla HTML, CSS, and JavaScript. The map renders county
+            boundaries and shades them by green space per capita. A county search
+            pulls the figure directly from the dataset and displays it alongside
+            a statewide comparison.
+          </p>
+          <p>
+            All data is processed client-side. No backend, no login, no tracking.
+          </p>
+          <p>
+            <strong>Data sources:</strong> USGS Protected Areas Database (PAD-US 4.1),
+            U.S. Census Bureau American Community Survey (2018–2022), U.S. Census
+            Bureau county boundary data (2022).
+          </p>
+
+          <h2>FAQ</h2>
+          <p>
+            <strong>Q:</strong> What counts as green space?<br />
+            <strong>A:</strong> Open-access public land only — parks, forests,
+            wildlife areas, and recreation grounds. Private land, golf courses,
+            and restricted areas are excluded.
+          </p>
+          <p>
+            <strong>Q:</strong> Where does the data come from?<br />
+            <strong>A:</strong> The USGS Protected Areas Database (PAD-US 4.1)
+            for land parcels, and the U.S. Census Bureau for population
+            estimates and county boundaries.
+          </p>
+          <p>
+            <strong>Q:</strong> Does this store anything?<br />
+            <strong>A:</strong> No. Everything runs in the browser. Nothing is
+            saved or sent.
+          </p>
+
+          <div class="sbl-project-links">
+            <a href="https://mwh-max.github.io/civic-return" target="_blank" rel="noopener noreferrer">Live Demo →</a>
+            <a href="https://github.com/mwh-max/civic-return" target="_blank" rel="noopener noreferrer">View Code on GitHub →</a>
+          </div>
+
+          <div class="sbl-cta-block">
+            <p><a href="../projects.html">← All projects</a></p>
+          </div>
+        </section>
+
+      </main>
+    </div>
+
+    <footer class="sbl-footer">
+      <div class="sbl-footer-inner">
+        <span class="sbl-footer-copy">&copy; 2026 Sleeping Bear Labs</span>
+        <nav class="sbl-footer-nav">
+          <a href="../index.html">Home</a>
+          <a href="../projects.html">Projects</a>
+          <a href="../about.html">About</a>
+          <a href="../writing.html">Writing</a>
+          <a href="../work-with-me.html">Work With Me</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="../main.js" defer></script>
+  </body>
+</html>

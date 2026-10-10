@@ -24,8 +24,8 @@ window.addEventListener("scroll", function () {
   if (nav) nav.classList.toggle("scrolled", window.scrollY > 0);
 });
 
+// Address is stored reversed and base64-encoded to deter scrapers
 document.querySelectorAll(".sbl-email-link").forEach((link) => {
-  const user = link.getAttribute("data-user");
-  const domain = link.getAttribute("data-domain");
-  link.href = `mailto:${user}@${domain}`;
+  const address = atob(link.getAttribute("data-e")).split("").reverse().join("");
+  link.href = `mailto:${address}`;
 });

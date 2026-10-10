@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Kentucky Food Insecurity",
+        "description": "Kentucky Food Insecurity tracks overall and child food insecurity rates across all 120 Kentucky counties from 2020 to 2023, using Feeding America's Map the Meal Gap data.",
+        "url": "https://sleepingbear.us/projects/kyfoodinsecurity.html",
+        "applicationCategory": "CivicApplication",
+        "operatingSystem": "All",
+        "creator": {
+          "@type": "Person",
+          "name": "Matthew Herron"
+        },
+        "inLanguage": "en",
+        "keywords": [
+          "food insecurity",
+          "Kentucky",
+          "county data",
+          "child food insecurity",
+          "Map the Meal Gap",
+          "civic tech",
+          "open data"
+        ]
+      }
+    </script>
+    <title>Kentucky Food Insecurity – Sleeping Bear Labs</title>
+    <link rel="canonical" href="https://sleepingbear.us/projects/kyfoodinsecurity.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sleepingbear.us/projects/kyfoodinsecurity.html" />
+    <meta property="og:title" content="Kentucky Food Insecurity – Sleeping Bear Labs" />
+    <meta property="og:description" content="County-level food insecurity rates for all 120 Kentucky counties, 2020–2023, from Feeding America's Map the Meal Gap data. Compare counties, years, and child rates." />
+    <meta property="og:image" content="https://sleepingbear.us/images/logo-sleepingbearlabs.png" />
+    <meta property="og:image:alt" content="Sleeping Bear Labs logo" />
+    <meta
+      name="description"
+      content="County-level food insecurity rates for all 120 Kentucky counties, 2020–2023, from Feeding America's Map the Meal Gap data. Compare counties, years, and child rates."
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <div class="logo">
+            <a href="../">
+              <img
+                src="../images/logo-sleepingbearlabs.png"
+                alt="Sleeping Bear Labs"
+                height="32"
+              />
+            </a>
+          </div>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="navLinks"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="../projects.html" class="active">Projects</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../writing.html">Writing</a></li>
+            <li><a href="../work-with-me.html">Work With Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-content">
+      <main>
+
+        <section class="sbl-page-hero">
+          <h1>Kentucky Food Insecurity</h1>
+          <p>County-level food insecurity rates for all 120 Kentucky counties, 2020–2023.</p>
+        </section>
+
+        <section class="sbl-prose">
+          <hr />
+
+          <h2>About This Project</h2>
+          <p>
+            Kentucky Food Insecurity tracks how many residents in each Kentucky
+            county can't consistently afford enough food for an active, healthy
+            life. It covers all 120 counties from 2020 to 2023, with the most
+            recent figures reflecting 2023 conditions.
+          </p>
+          <p>
+            Each county's rate is shown against the statewide average, so it's
+            easy to see which counties sit above or below it. A plain-language
+            explainer covers what food insecurity means and how the rates are
+            calculated.
+          </p>
+
+          <h2>How It Works</h2>
+          <p>
+            Pick a year, sort counties alphabetically or by rate, and search for
+            a specific county. A toggle switches between the overall food
+            insecurity rate and the child food insecurity rate (children under
+            18).
+          </p>
+          <p>
+            Built with vanilla HTML, CSS, and JavaScript.
+          </p>
+          <p>
+            <strong>Data source:</strong> Feeding America, Map the Meal Gap
+            (2022–2025 editions, covering 2020–2023). Full academic citations are
+            listed on the live site.
+          </p>
+
+          <h2>FAQ</h2>
+          <p>
+            <strong>Q:</strong> What is food insecurity?<br />
+            <strong>A:</strong> A person is food insecure when they can't
+            consistently afford enough food — often because they have to choose
+            between groceries and other basics like rent, utilities, or medical
+            bills.
+          </p>
+          <p>
+            <strong>Q:</strong> Are these direct counts?<br />
+            <strong>A:</strong> No. They're modeled estimates from Feeding
+            America, based on county-level data on poverty, unemployment,
+            homeownership, and disability.
+          </p>
+
+          <div class="sbl-project-links">
+            <a href="https://mwh-max.github.io/kentucky-food-insecurity/" target="_blank" rel="noopener noreferrer">Live Site →</a>
+            <a href="https://github.com/mwh-max/kentucky-food-insecurity" target="_blank" rel="noopener noreferrer">View Code on GitHub →</a>
+          </div>
+
+          <div class="sbl-cta-block">
+            <p><a href="../projects.html">← All projects</a></p>
+          </div>
+        </section>
+
+      </main>
+    </div>
+
+    <footer class="sbl-footer">
+      <div class="sbl-footer-inner">
+        <span class="sbl-footer-copy">&copy; 2026 Sleeping Bear Labs</span>
+        <nav class="sbl-footer-nav">
+          <a href="../">Home</a>
+          <a href="../projects.html">Projects</a>
+          <a href="../about.html">About</a>
+          <a href="../writing.html">Writing</a>
+          <a href="../work-with-me.html">Work With Me</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="../main.js" defer></script>
+  </body>
+</html>
